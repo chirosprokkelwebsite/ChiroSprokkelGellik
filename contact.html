@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact • Chiro Sprokkel Gellik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="images/Logo without background.png" alt="Logo Chiro Sprokkel Gellik">
+      <div class="title">
+        <strong>Chiro Sprokkel Gellik</strong>
+        <span>Contact</span>
+      </div>
+    </a>
+
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="leiding.html">Leiding</a>
+      <a href="info-kalender.html">Info/Kalender</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <h2>Contacteer ons</h2>
+    <div class="card">
+      <p>Stuur ons gerust een bericht via Instagram of Facebook.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="contactLinks">
+      <a class="linkCard" href="https://www.instagram.com/chirosprokkelgellik/" target="_blank" rel="noopener">
+        <div class="icon" aria-hidden="true">📸</div>
+        <div>
+          <strong>Instagram</strong>
+          <span>@chirosprokkelgellik</span>
+        </div>
+      </a>
+
+      <a class="linkCard" href="https://www.facebook.com/chirosprokkelgellik/?locale=nl_BE" target="_blank" rel="noopener">
+        <div class="icon" aria-hidden="true">📘</div>
+        <div>
+          <strong>Facebook</strong>
+          <span>Chiro Sprokkel Gellik</span>
+        </div>
+      </a>
+    </div>
+
+    <p class="smallNote">
+      Tip: je kan hier later ook nog een e-mailadres of telefoonnummer toevoegen.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> Chiro Sprokkel Gellik</div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
