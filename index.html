@@ -1,79 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <title>Chiro Sprokkel Gellik</title>
-    <meta charset="UTF-8">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-
-        header {
-            background-color: #e30613;
-            color: white;
-            padding: 40px 20px;
-        }
-
-        nav {
-            background-color: #222;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 40px 20px;
-        }
-
-        .foto {
-            width: 80%;
-            max-width: 600px;
-            border-radius: 15px;
-            margin-top: 20px;
-        }
-
-        footer {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chiro Sprokkel Gellik</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <h1>Chiro Sprokkel Gellik</h1>
-    <p>Samen spelen, lachen en groeien!</p>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="images/Logo without background.png" alt="Logo Chiro Sprokkel Gellik">
+      <div class="title">
+        <strong>Chiro Sprokkel Gellik</strong>
+        <span>Jongens • Gellik</span>
+      </div>
+    </a>
+
+    <nav class="navlinks">
+      <a class="active" href="index.html">Home</a>
+      <a href="leiding.html">Leiding</a>
+      <a href="info-kalender.html">Info/Kalender</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Leiding</a>
-    <a href="#">Foto's</a>
-    <a href="#">Contact</a>
-</nav>
+<main class="container">
+  <section class="hero">
+    <div class="heroCard">
+      <div class="heroInner">
+        <div>
+          <h1>Welkom bij <span class="highlight">Chiro Sprokkel</span> Gellik!</h1>
+          <p>
+            Wij zijn de <strong>jongenschiro van Gellik</strong>. Elke zondag maken we van 14u tot 17u
+            een superleuke chiro-activiteit voor jongens vanaf 6 jaar.
+          </p>
+          <div class="badges">
+            <div class="badge">📍 St.-Augustinusstraat 15, Gellik</div>
+            <div class="badge">🕑 14:00 – 17:00</div>
+            <div class="badge">👦 Vanaf 6 jaar</div>
+          </div>
+          <p class="smallNote">Bekijk zeker de pagina’s “Leiding” en “Info/Kalender” voor meer!</p>
+        </div>
 
-<section>
-    <h2>Welkom!</h2>
-    <p>Welkom op de officiële website van Chiro Sprokkel Gellik.</p>
-    <p>Elke zondag maken we er samen een geweldige dag van!</p>
+        <aside class="heroSide">
+          <h3>Snel naar</h3>
+          <ul>
+            <li><a href="leiding.html">Alle leiding voorstellen</a></li>
+            <li><a href="info-kalender.html">Kalender & info</a></li>
+            <li><a href="contact.html">Contact via Insta/Facebook</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
 
-    <img src="images/chiro.jpg" alt="Chiro foto" class="foto">
-</section>
+  <section class="section">
+    <h2>Wat doen we?</h2>
+    <div class="card">
+      <p>
+        Spel, ravotten, lachen, teamwork, kamp en activiteiten waar je elke week naar uitkijkt.
+        Kom gerust eens proberen — je bent welkom!
+      </p>
+    </div>
+  </section>
+</main>
 
 <footer>
-    © 2026 Chiro Sprokkel Gellik
+  <div class="container">
+    © <span id="year"></span> Chiro Sprokkel Gellik
+  </div>
 </footer>
 
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
