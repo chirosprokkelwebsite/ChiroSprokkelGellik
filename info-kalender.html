@@ -1,62 +1,52 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Info & Kalender • Chiro Sprokkel Gellik</title>
-  <link rel="stylesheet" href="style.css">
+<title>Info & Kalender</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <div class="container navbar">
-    <a class="brand" href="index.html">
-      <img src="images/Logo without background.png" alt="Logo Chiro Sprokkel Gellik">
-      <div class="title">
-        <strong>Chiro Sprokkel Gellik</strong>
-        <span>Info & Kalender</span>
-      </div>
-    </a>
 
-    <nav class="navlinks">
-      <a href="index.html">Home</a>
-      <a href="leiding.html">Leiding</a>
-      <a class="active" href="info-kalender.html">Info/Kalender</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+<img src="Logo without background.png">
+
+<h2>Chiro Sprokkel Gellik</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="leiding.html">Leiding</a>
+<a href="info.html">Info/Kalender</a>
+<a href="contact.html">Contact</a>
+</nav>
+
 </header>
 
-<main class="container">
-  <section class="section">
-    <h2>Info</h2>
-    <div class="card">
-      <p>
-        Wij zijn de <strong>jongens chiro van Gellik</strong>, gelegen op
-        <strong>St.-Augustinusstraat 15</strong>.
-      </p>
-      <p>
-        Elke zondag van <strong>14u tot 17u</strong> hebben we een super leuke chiro-activiteit
-        voor jongens vanaf <strong>6 jaar</strong>.
-      </p>
-    </div>
-  </section>
 
-  <section class="section">
-    <h2>Kalender 2025–2026</h2>
-    <div class="card">
-      <p>Hier staat de kalender met activiteiten en kampen.</p>
-      <img class="kalenderImg" src="images/18e96a61-7d36-4b13-bc46-1300463a6e98.png" alt="Chiro Sprokkel kalender 2025-2026">
-    </div>
-  </section>
-</main>
+<div class="container">
+
+<h1>Info</h1>
+
+<p>
+Wij zijn de jongens chiro van Gellik gelegen op
+<b>St-Augustinusstraat 15</b>.
+</p>
+
+<p>
+Elke zondag van <b>14u tot 17u</b> organiseren wij
+een super leuke chiro activiteit voor jongens vanaf <b>6 jaar</b>.
+</p>
+
+
+<h1>Kalender</h1>
+
+<img src="18e96a61-7d36-4b13-bc46-1300463a6e98.png" style="width:100%;max-width:900px;">
+
+</div>
 
 <footer>
-  <div class="container">© <span id="year"></span> Chiro Sprokkel Gellik</div>
+Chiro Sprokkel Gellik
 </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
