@@ -1,85 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-<title>Leiding - Chiro Sprokkel Gellik</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leiding - Chiro Sprokkel Gellik</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
+  <img src="Logo without background.png" alt="Logo Chiro Sprokkel Gellik">
+  <h2>Chiro Sprokkel Gellik</h2>
 
-<img src="Logo without background.png">
-
-<h2>Chiro Sprokkel Gellik</h2>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="leiding.html">Leiding</a>
-<a href="info.html">Info/Kalender</a>
-<a href="contact.html">Contact</a>
-</nav>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="leiding.html">Leiding</a>
+    <a href="info.html">Info/Kalender</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-
 <div class="container">
+  <h1>Onze Leiding</h1>
+  <p>Klik op een foto om ze groter te bekijken.</p>
 
-<h1>Onze Leiding</h1>
+  <div class="grid">
 
-<div class="grid">
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.25.09.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.25.09.jpeg" alt="Leiding 1" loading="lazy">
+    </div>
 
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.25.09.jpeg">
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.25.54.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.25.54.jpeg" alt="Leiding 2" loading="lazy">
+    </div>
+
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.26.06.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.26.06.jpeg" alt="Leiding 3" loading="lazy">
+    </div>
+
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.26.30.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.26.30.jpeg" alt="Leiding 4" loading="lazy">
+    </div>
+
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.26.42.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.26.42.jpeg" alt="Leiding 5" loading="lazy">
+    </div>
+
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.26.55.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.26.55.jpeg" alt="Leiding 6" loading="lazy">
+    </div>
+
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.27.13.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.27.13.jpeg" alt="Leiding 7" loading="lazy">
+    </div>
+
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.28.07.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.28.07.jpeg" alt="Leiding 8" loading="lazy">
+    </div>
+
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.28.19.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.28.19.jpeg" alt="Leiding 9" loading="lazy">
+    </div>
+
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.28.39.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.28.39.jpeg" alt="Leiding 10" loading="lazy">
+    </div>
+
+    <div class="card clickable" onclick="openLightbox('WhatsApp Image 2025-10-21 at 22.28.59.jpeg')">
+      <img src="WhatsApp Image 2025-10-21 at 22.28.59.jpeg" alt="Leiding 11" loading="lazy">
+    </div>
+
+  </div>
 </div>
 
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.25.54.jpeg">
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.26.06.jpeg">
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.26.30.jpeg">
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.26.42.jpeg">
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.26.55.jpeg">
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.27.13.jpeg">
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.28.07.jpeg">
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.28.19.jpeg">
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.28.39.jpeg">
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2025-10-21 at 22.28.59.jpeg">
-</div>
-
-</div>
-
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close-btn">&times;</span>
+  <img id="lightbox-img" class="lightbox-content" src="" alt="Vergrote foto">
 </div>
 
 <footer>
-Chiro Sprokkel Gellik
+  Chiro Sprokkel Gellik
 </footer>
+
+<script>
+  function openLightbox(imageSrc) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = imageSrc;
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
 
 </body>
 </html>
