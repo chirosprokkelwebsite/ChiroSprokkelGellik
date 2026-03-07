@@ -78,9 +78,10 @@ p {
 
 .card img {
   width: 100%;
-  height: 320px;
-  object-fit: cover;
+  max-height: 350px;
+  object-fit: contain;
   display: block;
+  background: white;
 }
 
 .card.clickable {
@@ -110,6 +111,17 @@ footer {
   font-weight: bold;
 }
 
+.info-image {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Lightbox */
 .lightbox {
   display: none;
   position: fixed;
@@ -141,6 +153,7 @@ footer {
   cursor: pointer;
 }
 
+/* Tablet */
 @media (max-width: 900px) {
   header {
     justify-content: center;
@@ -157,12 +170,9 @@ footer {
     width: 100%;
     font-size: 24px;
   }
-
-  .card img {
-    height: 280px;
-  }
 }
 
+/* Telefoon */
 @media (max-width: 600px) {
   header {
     padding: 12px;
@@ -180,11 +190,12 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 6px;
+    width: 100%;
   }
 
   nav a {
     width: 100%;
-    max-width: 260px;
+    max-width: 280px;
     text-align: center;
     background: rgba(255, 255, 255, 0.08);
   }
@@ -208,10 +219,7 @@ footer {
   }
 
   .card img {
-    height: auto;
     max-height: 500px;
-    object-fit: contain;
-    background: #fff;
   }
 
   .lightbox-content {
